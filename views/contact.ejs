@@ -211,52 +211,31 @@ textarea:focus {
 
 </style>
 <div class="row justify-content-center" style="height:500px;">
-<h4 class="text-center">Enter your Suggestion, Feedback or Query!</h4>
-<div class="wrapper centered"  style="margin-top: 70px;">
-<form action="/contact" enctype="multipart/form-data"  method="post" class="contactForm" onsubmit="return validateForm()">
-  <article class="letter">
-    <div class="side" >
-      <h1>Contact us</h1>
-      <p>
-        <textarea placeholder="Your message" name="message" ></textarea>
-      </p>
-    </div>
-    <div class="side">
-      <p>
-        <input type="text" placeholder="Your name" name="name" >
-      </p>
-      <p>
-        <input type="email" placeholder="Your email" name="email" >
-      </p>
-      <p>
-        <button id="sendLetter">Send</button>
-      </p>
-    </div>
-  </article>
-</form>
-  <div class="envelope front"></div>
-  <div class="envelope back"></div>
-  <h5 class="result-message centered text-center">Thank you</h5>
+  <h4 class="text-center">Enter your Suggestion, Feedback, or Query!</h4>
+  <div class="wrapper centered" style="margin-top: 70px;">
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="contactForm">
+          <article class="letter">
+              <div class="side">
+                  <h1>Contact us</h1>
+                  <p>
+                      <textarea placeholder="Your message" name="message"></textarea>
+                  </p>
+              </div>
+              <div class="side">
+                  <p>
+                      <input type="text" placeholder="Your name" name="name">
+                  </p>
+                  <p>
+                      <input type="email" placeholder="Your email" name="email">
+                  </p>
+                  <p>
+                      <input type="submit" value="Send">
+                  </p>
+              </div>
+          </article>
+      </form>
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+      <h5 class="result-message centered text-center">Thank you</h5>
+  </div>
 </div>
-
-
-</div>
-<script>
-    function addClass() {
-  document.body.classList.add("sent");
-}
-
-sendLetter.addEventListener("click", addClass);
-function validateForm() {
-        var name = document.forms["contactForm"]["name"].value;
-        var email = document.forms["contactForm"]["email"].value;
-
-        if (name === "" || email === "") {
-            alert("Name and Email must be filled out");
-            return false;
-        }
-        // You can add additional validation here if needed
-
-        return true; }
-
-</script>
