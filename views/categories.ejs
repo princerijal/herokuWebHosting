@@ -177,29 +177,39 @@
     </div>
     
     <div class="recipe-card">
-        <h2>Vegetable Soup</h2>
-        <p>
-            <pre>Ingredients:
-            2 carrots, diced
-            2 celery stalks, diced
-            1 onion, chopped
-            2 cloves garlic, minced
-            1 potato, diced
-            4 cups vegetable broth
-            1 can (14 oz/400g) diced tomatoes
-            1 cup frozen corn
-            1 cup frozen peas
-            1 tsp dried thyme
-            Salt and pepper to taste
-            </pre>
-            Instructions:
-            
-            In a large pot, heat olive oil over medium heat. Add onion, carrots, celery, and garlic. Cook until softened.
-            Add potato, vegetable broth, diced tomatoes, frozen corn, frozen peas, dried thyme, salt, and pepper.
-            Bring to a boil, then reduce heat and simmer for about 20-25 minutes, until vegetables are tender.
-            Serve hot and enjoy this comforting vegetable soup!
-        </p>
-    </div>
+      <h2>Vegetable Soup</h2>
+      <p>
+          <pre>Ingredients:
+          2 carrots, diced
+          2 celery stalks, diced
+          1 onion, chopped
+          2 cloves garlic, minced
+          1 potato, diced
+          4 cups vegetable broth
+          1 can (14 oz/400g) diced tomatoes
+          1 cup frozen corn
+          1 cup frozen peas
+          1 tsp dried thyme
+          Salt and pepper to taste
+          </pre>
+          Instructions:
+          
+          In a large pot, heat olive oil over medium heat. Add onion, carrots, celery, and garlic. Cook until softened.
+          Add potato, vegetable broth, diced tomatoes, frozen corn, frozen peas, dried thyme, salt, and pepper.
+          Bring to a boil, then reduce heat and simmer for about 20-25 minutes, until vegetables are tender.
+          Serve hot and enjoy this comforting vegetable soup!
+      </p>
+      
+      <!-- Comment Form -->
+      <form action="/add_comment" method="post">
+          <div class="mb-3">
+              <label for="comment" class="form-label">Add your comment:</label>
+              <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+  
       
     <% } %>
   </div>
